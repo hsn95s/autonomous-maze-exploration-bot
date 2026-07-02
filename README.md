@@ -79,3 +79,16 @@ Results are saved in `outputs/`, and publication-ready charts are copied into `f
 ## Notes
 
 The original academic assignment files and course-specific materials are not included in this public portfolio version. This repository focuses on the cleaned implementation, reproducible experiments, and presentation-ready documentation.
+
+## Reproducing Results
+
+Install dependencies and run the experiment script:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python scripts/run_experiments.py
+```
+
+Generated plots are saved in `outputs/`. The sample plots shown in this README are committed in the `figures/` directory. The experiment script uses fixed random seeds where applicable, so the results can be regenerated consistently.
